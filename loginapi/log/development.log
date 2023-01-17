@@ -1,0 +1,731 @@
+Started GET "/" for 127.0.0.1 at 2023-01-15 19:53:38 +0530
+  [1m[35m (759.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (310.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (20.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230115142326_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-01-15 19:53:50 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230115142326_create_users.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (17.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5701721441292216165)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (21.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230115142326)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (623.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "address" character varying, "password_digest" character varying, "phone_number" character varying, "role_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (16.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230115142326"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (18.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (27.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-15 18:12:57.913678"], ["updated_at", "2023-01-15 18:12:57.913678"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(5701721441292216165)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-01-15 23:54:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'landpage' could not be found for ApplicationController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-01-16 00:26:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (36.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#landingpage as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 16)
+Completed 200 OK in 736ms (Views: 476.4ms | ActiveRecord: 0.0ms | Allocations: 3044)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 00:30:16 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (41.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:7:in `index'
+Completed 200 OK in 306ms (Views: 101.0ms | ActiveRecord: 72.1ms | Allocations: 3843)
+
+
+Started POST "/user" for 127.0.0.1 at 2023-01-16 00:35:28 +0530
+Processing by UserController#create as */*
+  Parameters: {"name"=>"Renu", "email"=>"123@gmail.com", "address"=>"12, aaakarshan ,bangalore", "password"=>"[FILTERED]", "phone_number"=>"9826754324", "role_id"=>1, "user"=>{"name"=>"Renu", "email"=>"123@gmail.com", "address"=>"12, aaakarshan ,bangalore", "phone_number"=>"9826754324", "role_id"=>1}}
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 183.1ms | Allocations: 5734)
+
+
+  
+NoMethodError (undefined method `empty?' for 12345:Integer):
+  
+app/controllers/user_controller.rb:18:in `create'
+Started POST "/user" for 127.0.0.1 at 2023-01-16 00:36:21 +0530
+Processing by UserController#create as */*
+  Parameters: {"name"=>"Renu", "email"=>"123@gmail.com", "address"=>"12, aaakarshan ,bangalore", "password"=>"[FILTERED]", "phone_number"=>"9826754324", "role_id"=>1, "user"=>{"name"=>"Renu", "email"=>"123@gmail.com", "address"=>"12, aaakarshan ,bangalore", "phone_number"=>"9826754324", "role_id"=>1}}
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:18:in `create'
+  [1m[36mUser Create (103.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "password_digest", "phone_number", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Renu"], ["email", "123@gmail.com"], ["address", "12, aaakarshan ,bangalore"], ["password_digest", "[FILTERED]"], ["phone_number", "9826754324"], ["role_id", "1"], ["created_at", "2023-01-15 19:06:22.277676"], ["updated_at", "2023-01-15 19:06:22.277676"]]
+  ↳ app/controllers/user_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (11.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:18:in `create'
+Completed 200 OK in 742ms (Views: 0.2ms | ActiveRecord: 124.0ms | Allocations: 3321)
+
+
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/user" for 127.0.0.1 at 2023-01-16 00:46:41 +0530
+Processing by UserController#create as */*
+  Parameters: {"name"=>"Raj", "email"=>"456@gmail.com", "address"=>"12, aaakarshan ,bangalore", "password"=>"[FILTERED]", "phone_number"=>"9826754321", "role_id"=>2, "user"=>{"name"=>"Raj", "email"=>"456@gmail.com", "address"=>"12, aaakarshan ,bangalore", "phone_number"=>"9826754321", "role_id"=>2}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:18:in `create'
+  [1m[36mUser Create (14.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "password_digest", "phone_number", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Raj"], ["email", "456@gmail.com"], ["address", "12, aaakarshan ,bangalore"], ["password_digest", "[FILTERED]"], ["phone_number", "9826754321"], ["role_id", "2"], ["created_at", "2023-01-15 19:16:42.169264"], ["updated_at", "2023-01-15 19:16:42.169264"]]
+  ↳ app/controllers/user_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:18:in `create'
+Completed 200 OK in 774ms (Views: 0.3ms | ActiveRecord: 36.1ms | Allocations: 4977)
+
+
+Started POST "/user" for 127.0.0.1 at 2023-01-16 00:47:54 +0530
+Processing by UserController#create as */*
+  Parameters: {"name"=>"Hema", "email"=>"Hema@gmail.com", "address"=>"12, aaakarshan ,bangalore", "password"=>"[FILTERED]", "phone_number"=>"9826754361", "role_id"=>1, "user"=>{"name"=>"Hema", "email"=>"Hema@gmail.com", "address"=>"12, aaakarshan ,bangalore", "phone_number"=>"9826754361", "role_id"=>1}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/user_controller.rb:18:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "address", "password_digest", "phone_number", "role_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Hema"], ["email", "Hema@gmail.com"], ["address", "12, aaakarshan ,bangalore"], ["password_digest", "[FILTERED]"], ["phone_number", "9826754361"], ["role_id", "1"], ["created_at", "2023-01-15 19:17:54.839468"], ["updated_at", "2023-01-15 19:17:54.839468"]]
+  ↳ app/controllers/user_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/user_controller.rb:18:in `create'
+Completed 200 OK in 592ms (Views: 0.3ms | ActiveRecord: 3.5ms | Allocations: 2088)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/user" for 127.0.0.1 at 2023-01-16 00:51:49 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 876)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 00:51:54 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 799)
+
+
+Started GET "/user/1" for 127.0.0.1 at 2023-01-16 00:52:01 +0530
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:12:in `show'
+Completed 200 OK in 42ms (Views: 8.9ms | ActiveRecord: 0.6ms | Allocations: 1812)
+
+
+Started GET "/user/2" for 127.0.0.1 at 2023-01-16 00:52:09 +0530
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:12:in `show'
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 752)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 00:57:59 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 182ms (Views: 0.3ms | ActiveRecord: 18.3ms | Allocations: 4924)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 00:58:31 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 17.2ms | Allocations: 2295)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 00:59:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (18.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#landingpage as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 45ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 2247)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 01:03:20 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 87ms (Views: 0.5ms | ActiveRecord: 10.0ms | Allocations: 3755)
+
+
+Started GET "/user/1" for 127.0.0.1 at 2023-01-16 01:03:32 +0530
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:16:in `show'
+Completed 200 OK in 67ms (Views: 2.9ms | ActiveRecord: 16.6ms | Allocations: 7140)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 01:04:12 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/user_controller.rb:7:in `index'
+Completed 200 OK in 41ms (Views: 17.1ms | ActiveRecord: 12.7ms | Allocations: 4543)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 01:29:47 +0530
+Started GET "/" for 127.0.0.1 at 2023-01-16 01:29:47 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#landingpage as HTML
+Processing by UserController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/user_controller.rb:7:in `index'
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 69ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 5308)
+
+
+Completed 200 OK in 96ms (Views: 39.1ms | ActiveRecord: 23.1ms | Allocations: 10825)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-01-16 01:29:54 +0530
+Processing by LoginController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 11ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-16 01:30:11 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (69.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 705ms (Views: 0.2ms | ActiveRecord: 70.1ms | Allocations: 2331)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-16 01:33:28 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"check@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"check@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "check@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 601)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-01-16 01:36:02 +0530
+Processing by LoginController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 164)
+
+
+Started GET "/login/1" for 127.0.0.1 at 2023-01-16 01:36:22 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for LoginController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2023-01-16 01:49:44 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"check@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"check@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "check@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 188ms (Views: 0.3ms | ActiveRecord: 22.6ms | Allocations: 3578)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-16 01:50:26 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 561ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 670)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-16 01:51:22 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 580ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 833)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:01:13 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 730ms (Views: 0.2ms | ActiveRecord: 22.1ms | Allocations: 3557)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:01:47 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 566ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 836)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2023-01-16 02:08:09 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/login"):
+  
+Started DELETE "/login" for 127.0.0.1 at 2023-01-16 02:09:14 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/login"):
+  
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:11:16 +0530
+Processing by UserController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/user_controller.rb:7:in `index'
+Completed 200 OK in 312ms (Views: 298.8ms | ActiveRecord: 20.9ms | Allocations: 7100)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2023-01-16 02:15:24 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/login"):
+  
+Started DELETE "/login" for 127.0.0.1 at 2023-01-16 02:16:33 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/login"):
+  
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:16:43 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 621ms (Views: 0.2ms | ActiveRecord: 35.5ms | Allocations: 4278)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:17:38 +0530
+  
+SyntaxError (D:/Yubi_assignments/loginapi/app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end):
+  
+app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end
+app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end
+app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:19:05 +0530
+  
+SyntaxError (D:/Yubi_assignments/loginapi/app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end):
+  
+app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end
+app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end
+app/controllers/user_controller.rb:52: syntax error, unexpected end-of-input, expecting `end' or dummy end
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:19:59 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 30ms (Views: 2.0ms | ActiveRecord: 8.9ms | Allocations: 3574)
+
+
+Started POST "/user" for 127.0.0.1 at 2023-01-16 02:22:29 +0530
+Processing by UserController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms | Allocations: 481)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/controllers/user_controller.rb:20:in `create'
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:23:01 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 610ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 972)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:23:48 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 12ms (Views: 1.1ms | ActiveRecord: 0.5ms | Allocations: 905)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:24:47 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 0.5ms | Allocations: 912)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:26:31 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 52ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 842)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-01-16 02:38:58 +0530
+  
+ArgumentError ('Logout' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:9:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:40:03 +0530
+  
+ArgumentError ('Logout' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:9:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:40:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (46.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 629ms (Views: 0.3ms | ActiveRecord: 15.6ms | Allocations: 10385)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-01-16 02:40:34 +0530
+Processing by LoginController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.0ms | Allocations: 597)
+
+
+Started GET "/login/logout" for 127.0.0.1 at 2023-01-16 02:40:48 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for LoginController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:41:20 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 790ms (Views: 0.2ms | ActiveRecord: 10.6ms | Allocations: 15358)
+
+
+Started GET "/logout" for 127.0.0.1 at 2023-01-16 02:42:14 +0530
+Processing by LogoutController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "logout"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:43:05 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1104)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-01-16 02:44:22 +0530
+Processing by LoginController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 170)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:44:36 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 893)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-16 02:44:52 +0530
+Processing by LoginController#create as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "login"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Hema@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:11:in `create'
+Completed 200 OK in 551ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 814)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:45:07 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 14ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1623)
+
+
+Started GET "/logout" for 127.0.0.1 at 2023-01-16 02:45:31 +0530
+Processing by LogoutController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "logout"=>{"email"=>"Hema@gmail.com", "password"=>"[FILTERED]"}}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+
+
+Started GET "/user" for 127.0.0.1 at 2023-01-16 02:45:47 +0530
+Processing by UserController#index as */*
+  Parameters: {"email"=>"Hema@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"Hema@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:11:in `index'
+Completed 200 OK in 16ms (Views: 1.2ms | ActiveRecord: 0.5ms | Allocations: 889)
+
+
